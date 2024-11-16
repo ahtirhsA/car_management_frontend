@@ -49,7 +49,7 @@ const RegistrationPage=()=>{
             body:JSON.stringify(regObj)
            }
 
-        const response=await fetch('http://localhost:3004/',options);
+        const response=await fetch('https://car-management-backend-1-es3u.onrender.com/',options);
         const regRes=await response.text()
         
         if (regRes==='ok'){

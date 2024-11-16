@@ -40,7 +40,7 @@ const Product=()=>{
 
        setStatus({sts:statusObj.progress})
 
-        const response=await fetch(`http://localhost:3004/products/${loggedInUserId}?search=${search}`,options)
+        const response=await fetch(`https://car-management-backend-1-es3u.onrender.com/products/${loggedInUserId}?search=${search}`,options)
 
         if (response.ok){
             const jsondata=await response.json()
@@ -147,7 +147,7 @@ const Product=()=>{
           }
         }
     
-        const delUserApi=await fetch(`http://localhost:3004/delUser/${loggedInUserId}`,options)
+        const delUserApi=await fetch(`https://car-management-backend-1-es3u.onrender.com/delUser/${loggedInUserId}`,options)
     
         const txtResp=await delUserApi.text()
 

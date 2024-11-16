@@ -29,7 +29,7 @@ const Details = () => {
       },
     };
 
-    const resp = await fetch(`http://localhost:3004/details/${id}`, options);
+    const resp = await fetch(`https://car-management-backend-1-es3u.onrender.com/details/${id}`, options);
     const jsData = await resp.json();
 
     if (resp.ok) {
@@ -56,7 +56,7 @@ const Details = () => {
       },
     };
 
-    await fetch(`http://localhost:3004/delete/${id}`, options);
+    await fetch(`https://car-management-backend-1-es3u.onrender.com/delete/${id}`, options);
     navigate('/product');
   };
 

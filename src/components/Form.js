@@ -49,7 +49,7 @@ const Form = () => {
       }
     }
 
-    const response = await fetch('http://localhost:3004/upload-images', {
+    const response = await fetch('https://car-management-backend-1-es3u.onrender.com/upload-images', {
       method: 'POST',
       body: formData,
       headers: {
@@ -92,7 +92,7 @@ const Form = () => {
       }
     }
 
-    await fetch(`http://localhost:3004/update/${lcid}`, {
+    await fetch(`https://car-management-backend-1-es3u.onrender.com/update/${lcid}`, {
       method: 'PUT',
       body: formData,
       headers: {

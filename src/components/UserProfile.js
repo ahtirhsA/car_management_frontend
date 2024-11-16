@@ -61,7 +61,7 @@ const UserProfile=()=>{
        }
 
 
-       const userProfileApi=await fetch(`http://localhost:3004/detailsupdate/${loggedInUserId}`,options)
+       const userProfileApi=await fetch(`https://car-management-backend-1-es3u.onrender.com/detailsupdate/${loggedInUserId}`,options)
        const txtData=await userProfileApi.text()
        
        console.log(txtData)
